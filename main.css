@@ -1,15 +1,41 @@
 body, 
 html {
-	font-family: Arial, Sans, Helvetica;
+  font-family: Arial, Sans, Helvetica;
+  margin:0;
+  padding:0;
+}
+
+#flex-container {
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items:center;
+	width: 65%;
+	float:left;
 }
 
 #entry, #button-result {
-  width: 50%;
+  width: 70%;
   height: 400px;
+  margin: 5%;
   overflow: scroll:
 }
 
+#sidebar {
+	width: 30%;
+	min-height:10vh;
+	margin-top:0;
+	margin-right:0;
+	float:left;
+	background-color: pink;
+	padding: 10px;
+}
 button{
 	padding: 20px;
 	font-size: 20px;
+}
+
+xmp {
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }

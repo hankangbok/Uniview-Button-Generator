@@ -6,16 +6,49 @@
   
   
   <body>
-	<title>Button Generator</title>
-    <h1>
-      Uniview Button Generator
-    </h1>
-    <textarea id="entry" autofocus placeholder="Enter Comands Here"></textarea>
-    <button onclick="myFunction()">
-      Generate UV Button
-    </button>
-    <textarea id="button-result">Enter your commands here2</textarea>
-	<h1>Put an explanation of entry syntax over on the side later. </h1>
+	<div id="flex-container">
+		<title>Button Code Generator</title>
+		<h1> Uniview Button Code Generator </h1>
+		<textarea id="entry" autofocus placeholder="Enter Commands Here"></textarea>
+		<button onclick="myFunction()">
+		  Generate UV Button Code
+		</button>
+		<textarea id="button-result" placeholder="Button HTML will output here"></textarea>
+		<<h3>TODO: I'd also like to put a preview of what buttons will look like. </h3>
+		<p>
+			The source code for this project is available at 
+			<a href="https://github.com/hankangbok/Uniview-Button-Generator">Hannah Kang's Github</a>
+		</p>
+	</div>
+	<div id="sidebar">
+		<h1>How to Use</h1>
+		<ol>
+			<li>Enter commands in the upper text field as comma-separated values</li>
+			<li>Click Generate UV Buttons</li>
+			<li>HTML button code will appear in the lower text field</li>
+		</ol>
+		
+		<p>
+		<p><b>Enter 3 values (separated by commas) to make a toggle-off button. For example, </b></p>
+		<xmp>Uniview Command #1, Uniview Command #2, Button Text</xmp>
+		<p>Returns:</p>
+		<xmp><div class="ui-block-b"><button class="uv-toggle-off" data-message-on="Uniview Command #1" data-message-off=" Uniview Command #2"> Button Text</button></div></xmp>
+		
+		<p>
+		<p><b>Enter 2 values (separated by commas) to make a uniview-message-button. For example, </b></p>
+		<xmp>Uniview Command, Button Text</xmp>
+		<p>Returns:</p>
+		<xmp><div class="ui-block-b">
+		<button class="uv-message-button" data-message="Uniview Command"> Button Text</button>
+</div>
+</xmp>
+		<p><b>Try this example list of commands in the upper text field:</b></p>
+		<xmp>pluto.prop.enabled 1, pluto.prop.enabled 0, Pluto On</xmp>
+		<xmp>camera.setpivot Earth, Target Earth</xmp>
+		<xmp>camera.jumptoEarth, Jump To Earth</xmp>
+		
+	
+	</div>
 	<script src="index.js"></script>
   </body>
 </html>
