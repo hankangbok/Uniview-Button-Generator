@@ -1,6 +1,6 @@
 entryPoint= document.getElementById("entry");
 buttonResult = document.getElementById("button-result");
-
+const buffer_button="<div class=\"ui-block-a\"></div>\n";
 /* On click, get the value of entrypoint textarea */
 /* myFunction should pass the lines of text to helper functions */
 myFunction= ()=>{
@@ -12,7 +12,10 @@ myFunction= ()=>{
   for (var i=0; i<text_as_array.length; i++) {
 	let line = text_as_array[i];
   	let split_line = line.split(',');
-	if (split_line.length==2){
+    if (split_line.length==1){
+        result.push(buffer_button);
+    }
+    if (split_line.length==2){
     	result.push(create_message(split_line))
     }
     if (split_line.length==3){
