@@ -1,0 +1,15 @@
+body, 
+html {
+	font-family: Arial, Sans, Helvetica;
+}
+
+#entry, #button-result {
+  width: 50%;
+  height: 400px;
+  overflow: scroll:
+}
+
+button{
+	padding: 20px;
+	font-size: 20px;
+}
