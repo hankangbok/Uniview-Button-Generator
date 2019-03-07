@@ -23,7 +23,7 @@ html {
 
 #sidebar {
 	width: 30%;
-	min-height:10vh;
+	min-height:100vh;
 	margin-top:0;
 	margin-right:0;
 	float:left;
